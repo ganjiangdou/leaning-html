@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            width: 200px;
+            height: 50px;
+            /*把行内元素转换为块级元素*/
+            display: block;
+            background-color: red;
+        }
+        
+        div {
+            background-color: rebeccapurple;
+            /* 把块级元素转换为行内元素宽高将无效 */
+            display: inline;
+        }
+        
+        span {
+            width: 400px;
+            height: 200px;
+            background-color: blue;
+            /* 把行内元素转换为行内块元素 */
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.bilibili.com/">哔哩哔哩</a>
+    <a href="https://www.bilibili.com/">哔哩哔哩</a>
+    <div>我是块级元素</div>
+    <div>我是块级元素</div>
+    <span>行内元素转换为行内块元素</span>
+    <span>行内元素转换为行内块元素</span>
+</body>
+
+</html>

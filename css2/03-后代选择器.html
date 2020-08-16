@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+          后代选择器又称包含选择器，可以选择父元素李米娜的子元素。其写法就是把外层标签写在前面，内层标签写在后面，中间用空格分隔。当标签发生嵌套时，内层标签就成为外层标签的后代。
+          1.元素1和元素2中间用空格分隔。
+          2.元素1是父级，元素2是子级，最终选择是元素2.
+          3.元素1和元素2可以是任意基础选择器
+
+        */
+        /* 这是把ol中的li选择出来 */
+        
+        ol li {
+            color: red;
+        }
+        /* 这是把ol中的li，li中的a选出来 */
+        
+        ol li a {
+            color: rebeccapurple;
+        }
+        
+        .nav li a {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li><a href="#">我是孙子</a></li>
+    </ol>
+    <ul>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li><a href="#">我是孙子</a></li>
+    </ul>
+    <ul class="nav">
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li><a href="#">我是孙子</a></li>
+        <li><a href="#">我是孙子</a></li>
+        <li><a href="#">我是孙子</a></li>
+    </ul>
+</body>
+
+</html>

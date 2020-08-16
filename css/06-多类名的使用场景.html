@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.可以把一些标签元素相同的样式（共同的部分）放到一个类里面
+        2.这些标签都可以调用这个公共的类，然后再调用自己独有的类
+        3.从而节省CSS代码，统一修改也方便 */
+        .box{
+            width: 200px;
+            height: 200px;
+            font-size: 30px;
+        }
+        .red{
+            background-color: red; 
+            
+        }
+        .green{
+            background-color: green;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box red">红色</div>
+    <div class="box green">绿色</div>
+    <div class="box red">红色</div>
+</body>
+</html>

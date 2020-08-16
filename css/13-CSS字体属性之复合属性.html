@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 想要div文字变倾斜 加粗 字号设置为16像素 并且 是微软雅黑 */
+        div {
+            /* font-style: italic;
+            font-weight: 700;
+            font-size: 16px;
+            font-family: 'Microsoft yahei'; */
+            /* 复合属性：简写的方式 节约代码 */
+            /* font:font-style font-weight font-size/line-height font-family; */
+            font: italic 700 16px 'Microsoft yahei';
+            /* 注意：
+               使用font属性时，必须按照上面的语法格式中的顺序书写，不得更换顺序，并且各个属性之间用空格隔开。
+               不需要设置的属性可以省略，必须保留font-size和font-family属性，否则font属性不起作用。
+            
+             */
+        }
+    </style>
+</head>
+<body>
+    <div>感恩节来了，祝你感到快乐、感到幸福、感到甜蜜、感到高兴</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 利用background-position属性可以改变图片在背景中的位置 
+           参数代表的意思是：x坐标y坐标。可以使用方位名词或者精确单位
+           参数值     说明
+           length     百分数  由浮点数字和单位标识符组成的长度值
+           position   top、center、bottom、left、right方位名词
+           参数是方位名词：
+           1.如果指定的两个值都是方位名词，则两个值前后顺序无关。
+           2.如果只指定了一个方位名词，另一个值省略，则第二个值默认居中对齐
+        
+        */
+        
+        div {
+            width: 600px;
+            height: 600px;
+            background-image: url(images/雨伞.png);
+            background-color: pink;
+            background-repeat: no-repeat;
+            /* 水平居中 */
+            /* background-position: center top;  */
+            /* 右方水平居中 */
+            /* background-position: right center; */
+            /* 没写第二个值默认居中 */
+            background-position: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+
+</body>
+
+</html>

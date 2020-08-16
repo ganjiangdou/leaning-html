@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        如果想要差异化选择不同的标签，单独选一个或某几个标签，可以使用类选择器。
+        类选择器在HTML中以class属性表示，在CSS中，类选择器以一个点“.”号显示。
+        注意：
+        1.类选择器使用“.”（英文点号）进行标识，后面紧跟类名（自己取的名字）。
+        2.可以理解为给这个标签起了一个名字，来表示。
+        3.长名称或词组可以使用中横线来为选择器命名。
+        4.不要使用纯数字、中文名等命名，用英文字母来表示。
+        5.命名要有意义，尽量使别人一眼就知道这个类名的目的。
+        6.命名规范：搜索web前端开发规范手册
+
+        */
+
+        .red{
+            color: red;
+        }
+        .green{
+            color: green;
+        }
+        .star-bilibili{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- 类选择器口决：样式点定义，结构类（class）调用，一个或多个，开发最常用。 -->
+    <ul>
+        <li class="red">冰雨</li>
+        <li class="green">米生缘</li>
+        <li>李香兰</li>
+        <li>生僻字</li>
+        <li class="star-bilibili">雨果</li>
+        <li>江南</li>
+        <li>林俊杰</li>
+        <li class="green">郭冬临</li>
+        <li>帮助</li>
+        <li class="green">留言</li>
+    </ul>
+    <div class="red">阿巴阿巴阿巴阿巴阿巴</div>
+</body>
+</html>

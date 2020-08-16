@@ -1,0 +1,6 @@
+<html>
+    <head></head>   <!--标签都有开始标签和结束标签-->
+    <body></body>    <!--head和body是嵌套在html标签中与html是父子（包含）关系head和body为兄弟关系（并列关系）-->
+</html>
+ 
+<br />    <!--只有少数的是单个标签-->
