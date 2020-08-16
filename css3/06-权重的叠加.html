@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 复合选择器会有权重叠加的问题 */
+        /* ul li 权重0，0，0，1+0，0，0，1=0，0，0，2>li的权重0，0，0，1 */
+        
+        li {
+            color: red;
+        }
+        
+        ul li {
+            color: green;
+        }
+        /* 0,0,1,0+0,0,0,1=0,0,1,1 */
+        
+        .nav li {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li>每次想找个人陪的时候，就发现有的人不能找，有的人不该找，还有的人找不到。</li>
+        <li>不敢想以后，一想起来就仿佛万箭齐齐向我射来。</li>
+        <li>后来啊，人海十万里，谁可善待你。</li>
+    </ul>
+</body>
+
+</html>

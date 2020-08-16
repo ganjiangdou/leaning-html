@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 网页元素很多都带有默认的内外边距，而且不同的浏览器默认的也不一致
+        因此在布局前，首先要清除网页元素的内外边距 */
+        /* 注意：行内元素为了兼容尽量只设置左右内外边距，不要设置上下内外边距。
+        但是转换为块级和行内块元素就可以了。 */
+        /* 这句话 也是我们CSS的第一行代码 */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        span {
+            background-color: pink;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    123
+    <ul>
+        <li>abcd</li>
+    </ul>
+    <span>行内尽量只设置左右内外边距</span>
+</body>
+
+</html>

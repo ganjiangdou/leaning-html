@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 如果盒子本身没有指定width/height属性此时padding不会撑开盒子的大小 */
+        
+        h1 {
+            height: 200px;
+            background-color: pink;
+            padding: 30px;
+        }
+        
+        div {
+            height: 300px;
+            width: 300px;
+            background-color: purple;
+        }
+        
+        div p {
+            /* 没有指定高宽所以p不会撑开div盒子的大小 */
+            padding: 30px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1></h1>
+    <div>
+        <p></p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 继承的权重为0 如果该元素没有直接选中不管父元素权重多高子元素得到的权重都是0 */
+        
+        #test {
+            color: red;
+        }
+        
+        p {
+            color: pink;
+        }
+        
+        body {
+            color: red;
+        }
+        /* a链接浏览器默认指定了一个样式 蓝色的有下划线a{color：blue；} 如果我们指定了样式就会覆盖默认样式 */
+        
+        a {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="test">
+        <p>天台一场雨后，烟花布满夜空，你看，人间终究值得。</p>
+    </div>
+    <a href="#">我是单独的样式</a>
+</body>
+
+</html>
